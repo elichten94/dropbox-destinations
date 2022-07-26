@@ -1,9 +1,17 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Check out the deployed site
+TODO
 
-Things you may want to cover:
+## Setting up your local dev environment
+
+### Installing Ruby On Rails
+Follow relevant portions of the official rails guide [here](https://gorails.com/setup/osx/12-monterey) for your OS
+Specifically, install:
+- Ruby
+- Rails
+- PostgreSQL
+
 
 * Ruby version
 
