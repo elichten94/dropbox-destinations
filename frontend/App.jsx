@@ -8,9 +8,9 @@ const App = () => {
       <header>
 
       </header>
-      DROPBOX DESTINATION!!!!!
+        DROPBOX DESTINATION!!!!!
       <Switch>
-        <Route exact path="/" component={props => <TrailShowContainer {...props} />} />
+        {/* <Route exact path="/" component={props => <TrailShowContainer {...props} />} /> */}
     </Switch>
     </div>
     </>
