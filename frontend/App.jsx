@@ -7,7 +7,6 @@ import NavBarContainer from './components/homepage_component/nav_bar_container'
 const App = () => {
   return (
     <>
-
       <header className='header'>
         <button id='explore-btn'>Add a recommendation</button>
         <div>DROPBOX DESTINATIONS!</div>
