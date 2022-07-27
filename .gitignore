@@ -20,8 +20,10 @@
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 
+
 node_modules.js/
 tmp/
 bundle.js.map
-bundle.js
+app/assets/javascripts/bundle.js
+app/assets/javascripts/bundle.js.map
 .DS_Store
