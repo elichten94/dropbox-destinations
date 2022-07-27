@@ -37,7 +37,7 @@ class SearchBar extends React.Component{
     e.preventDefault()
     this.props.fetchResults(this.state.query)
       .then(action => this.setState({ results: action.payload.reverse()}))
-      
+
   }
 
   showSearchResults(){
@@ -75,30 +75,30 @@ class SearchBar extends React.Component{
     return (
       <div className='search-container' onSubmit={this.handleSubmit} >
         <form className='search-form' onKeyDown={this.handleKeyDown}>
-          
+
           <Search className='search-icon' />
           <input
             type='text'
             className='search-bar'
-            onChange={this.handleChange} 
+            onChange={this.handleChange}
             placeholder='Search by city, park, or trail name'
           />
           <FontAwesomeIcon type='submit' onClick={this.topResult} className='arrow-icon' icon={faArrowCircleRight} />
 
           <ul className='search-results-container'>
-            {this.state.query.length < 1 ? "" : 
+            {this.state.query.length < 1 ? "" :
             (this.state.results.map((result, i) => {
-              return result.park_name ? 
+              return result.park_name ?
                 <li className={this.state.cursor === i ? 'search-result-active' : 'search-result'} key={i}>
                   <Link to={`/parks/${result.id}`} className='result'>
-                    <FaTree className='searching-icon' size={20} color={'#428A13'}/> 
+                    <FaTree className='searching-icon' size={20} color={'#428A13'}/>
                     {result.park_name}
                     <div className='search-location'>{result.city}, {result.state}, {result.country}</div>
                 </Link>
               </li> :
                 <li className={this.state.cursor === i ? 'search-result-active' : 'search-result'} key={i}>
                   <Link to={`/trails/${result.id}`} className='result'>
-                    <FaMapMarkerAlt className='searching-icon' size={20} color={'#428A13'} /> 
+                    <FaMapMarkerAlt className='searching-icon' size={20} color={'#428A13'} />
                     <div className='result'>{result.trail_name}</div>
                 </Link>
               </li>

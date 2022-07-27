@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import SearchBar from './search_bar';
+import SearchBar from './search_bar.jsx';
 // import { fetchSearch } from '../../actions/search_actions'
 
 
