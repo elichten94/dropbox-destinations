@@ -7,4 +7,4 @@ const mapStateToProps = (state, ownProps) => {
   }
 }
 
-export const SplashContainer =  connect(mapStateToProps, null)(splashPage);
+export default connect(mapStateToProps, null)(splashPage);

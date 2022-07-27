@@ -6,15 +6,14 @@ import SplashContainer from './components/homepage_component/homepage_container'
 const App = () => {
   return (
     <>
-    <div>
+
       <header>
 
       </header>
         DROPBOX DESTINATION!!!!!
-      {/* <Switch> */}
+      <Switch>
         <Route exact path="/" component={props => <SplashContainer {...props} />} />
-    {/* </Switch> */}
-    </div>
+    </Switch>
     </>
   );
 };

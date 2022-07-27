@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
-import SearchBar from './search-bar';
-import { fetchSearch } from '../../actions/search_actions'
+import SearchBar from './search_bar';
+// import { fetchSearch } from '../../actions/search_actions'
 
 
 const mapStateToProps = (state) => {
@@ -10,7 +10,7 @@ const mapStateToProps = (state) => {
 }
 
 const mapDispatchToProps = (dispatch) => ({
-  fetchResults: (q => dispatch(fetchSearch(q)))
+  // fetchResults: (q => dispatch(fetchSearch(q)))
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(SearchBar);
