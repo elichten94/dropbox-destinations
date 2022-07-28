@@ -1,7 +1,7 @@
 import React from 'react'
 import SearchBarContainer from '../search_bar/search_bar_container.jsx'
 import Sidebar from './sidebar.jsx'
-import './homepage.css'
+// import './homepage.css'
 class splashPage extends React.Component {
   constructor(props) {
     super(props)
