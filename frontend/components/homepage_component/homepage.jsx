@@ -13,8 +13,8 @@ class splashPage extends React.Component {
       <>
       <div className='splash'>
         {/* <img id='beach-image' src='https://splash-page.s3.us-east-2.amazonaws.com/IMG_5994.jpeg' /> */}
-        <div className='home-container'>
-          <h1 className='welcomeMessage'>Are you ready for an adventure?</h1>
+        {/* <div className='home-container'> */}
+          {/* <h1 className='welcomeMessage'>Are you ready for an adventure?</h1> */}
           <SearchBarContainer/>
         </div>
         <div className='results'>

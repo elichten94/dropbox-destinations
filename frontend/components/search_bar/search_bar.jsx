@@ -73,7 +73,7 @@ class SearchBar extends React.Component{
 
   render(){
     return (
-      <div className='search-container' onSubmit={this.handleSubmit} >
+      // <div className='search-container' onSubmit={this.handleSubmit} >
         <form className='search-form' onKeyDown={this.handleKeyDown}>
 
           <Search className='search-icon' />
@@ -81,7 +81,7 @@ class SearchBar extends React.Component{
             type='text'
             className='search-bar'
             onChange={this.handleChange}
-            placeholder='Search by city, park, or trail name'
+            placeholder='Search by destinations to find great workspaces!'
           />
           <FontAwesomeIcon type='submit' onClick={this.topResult} className='arrow-icon' icon={faArrowCircleRight} />
 
@@ -106,7 +106,7 @@ class SearchBar extends React.Component{
             }
           </ul>
         </form>
-      </div>
+      // </div>
     )
   }
 }
