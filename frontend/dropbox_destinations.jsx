@@ -2,7 +2,7 @@ import ReactDOM from "react-dom"
 import React from "react"
 import App from "./App.jsx";
 import Root from './root'
-import configureStore from "./components/store/store.jsx";
+import configureStore from "./store/store";
 
 
 document.addEventListener("DOMContentLoaded", () => {
