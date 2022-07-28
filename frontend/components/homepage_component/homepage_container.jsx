@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import splashPage from './homepage';
+import splashPage from './homepage.jsx';
 
 const mapStateToProps = (state, ownProps) => {
   return{

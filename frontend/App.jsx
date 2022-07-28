@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Switch, Link } from 'react-router-dom';
-import SplashContainer from './components/homepage_component/homepage_container'
-import NavBarContainer from './components/homepage_component/nav_bar_container'
+import SplashContainer from './components/homepage_component/homepage_container.jsx'
+import NavBarContainer from './components/homepage_component/nav_bar_container.jsx'
 
 
 const App = () => {
