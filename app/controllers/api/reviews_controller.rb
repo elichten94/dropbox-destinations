@@ -1,4 +1,4 @@
-class ReviewsController < ApplicationController 
+class Api::ReviewsController < ApplicationController 
   def show
     Review.where(:rec_id => params[:id]).to_json
   end
