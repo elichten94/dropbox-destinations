@@ -8,6 +8,6 @@ class Api::RecommendationsController < ApplicationController
 
     def show 
         @recommendation = User.find(params[:id])
-        rebder @recommendation
+        render: @recommendation
     end
 end
