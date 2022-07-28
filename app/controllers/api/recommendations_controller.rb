@@ -7,6 +7,7 @@ class Api::RecommendationsController < ApplicationController
 
     def show
         @recommendation = Recommendation.find(params[:id])
-        render json: @recommendation
+        @reviews = @recommendation.reviews
+        render json: {'recommendation': @recommendation, "reviews": @reviews}
     end
 end

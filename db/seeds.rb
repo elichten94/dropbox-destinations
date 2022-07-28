@@ -45,12 +45,12 @@ recs = Recommendation.create([
     }
 ])
 
-reviews = Review.create([
+reviews = Review.create!([
     {
         title: 'I want to come back',
         body: 'I really want to come back',
         user_id: 1,
-        rec_id: 1,
+        rec_id: recs[0].id,
         rating: 5,
         photo: 'https://sayingimages.com/wp-content/uploads/i-cant-handle-life-meme.jpg'
     },
@@ -58,7 +58,7 @@ reviews = Review.create([
         title: 'Rude customers',
         body: 'Oh wait I was that customer. 5 stars',
         user_id: 1,
-        rec_id: 2,
+        rec_id: recs[0].id,
         rating: 5,
         photo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFPsHS2nCiB3qd3-t3nKrzj9iFYUlyGfzZ-g&usqp=CAU'
     }
