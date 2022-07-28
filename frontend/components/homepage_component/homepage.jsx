@@ -16,18 +16,15 @@ class splashPage extends React.Component {
         {/* <div className='home-container'> */}
           {/* <h1 className='welcomeMessage'>Are you ready for an adventure?</h1> */}
           <SearchBarContainer/>
+      </div>
+      <div className='results'>
+        <div className='recs'> RECS </div>
+        <div className='map'> MAP </div>
+        <div className='sidebar'>
+          <Sidebar people={['emily','brian','jamie', 'wenya', 'michelle']}/>
         </div>
-        <div className='results'>
-      <div className='recs'> RECS </div>
-      <div className='map'> MAP </div>
-      <div className='sidebar'>
-      <Sidebar people={['emily','brian','jamie', 'wenya', 'michelle']}/>
       </div>
-      </div>
-      </div>
-
-
-      </>
+    </>
     )
   }
 }
