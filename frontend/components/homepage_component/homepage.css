@@ -1,6 +1,6 @@
 .recs  {
   border: green solid 1px;
-  height: 300px;
+  height: 500px;
   width: 500px;
   text-align: center;
 
@@ -8,21 +8,21 @@
 
  .map  {
   border: green solid 1px;
-  height: 300px;
+  height: 500px;
   width: 500px;
   text-align: center;
 
  }
  .sidebar  {
   border: red solid 1px;
-  height: 300px;
+  height: 500px;
   width: 500px;
   text-align: center;
 
  }
 
  .results  {
-  margin-top: 300px;
+  margin-top: 100px;
   height: auto;
   width: auto;
   display:flex;
