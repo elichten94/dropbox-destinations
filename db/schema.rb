@@ -24,6 +24,8 @@ ActiveRecord::Schema.define(version: 2022_07_28_085926) do
     t.float "rating", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "user_id", null: false
+    t.index ["user_id"], name: "index_recommendations_on_user_id"
   end
 
   create_table "reviews", force: :cascade do |t|
