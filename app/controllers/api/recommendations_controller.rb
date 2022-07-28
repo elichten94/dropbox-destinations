@@ -1,6 +1,7 @@
 class Api::RecommendationsController < ApplicationController
     def index 
-        @recommendations = Recommendation.select_all("SELECT * FROM recommendations WHERE city like  '?' AND '?%'", params[:city])
+        @city = params[:city] || ''
+        @recommendations = Recommendation.where("lower(city) like ?", "%#{@city.downcase}%")
         render json: @recommendations
     end
 
