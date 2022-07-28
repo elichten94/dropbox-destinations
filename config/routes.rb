@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   root to: 'static_pages#root'
   namespace :api, defaults: { format: :json} do 
-    resources :recommendations, only: [:index]
-    resources :reviews
+    resources :recommendations, only: [:show]
+    resources :reviews, only: [:show, :create, :update, :destroy]
   end
 end
