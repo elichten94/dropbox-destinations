@@ -1,0 +1,42 @@
+
+
+ .body  {
+  height: auto;
+  width: auto;
+  display:flex;
+  flex-direction: row;
+
+ }
+
+ .leftbody  {
+  height: auto;
+  width: auto;
+  display:flex;
+  flex-direction: row;
+
+ }
+
+
+.logo{
+color: white;
+font-style: bold;
+font-size: 35px;
+margin-left: -110px;
+
+}
+
+.add-rec-button{
+  margin-left: 30px;
+  padding: 8px;
+  border: 1px solid rgb(218, 218, 218);
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: transparent;
+  color: rgb(218, 218, 218);
+  font-weight: 300;
+  font-size: 15px;
+}
+
+
+
+
