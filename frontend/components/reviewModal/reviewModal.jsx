@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { AiFillStar } from "react-icons/ai";
+import { ImCross } from 'react-icons/im'
 
 const Modals = (props) => {
   const [tags, setTags] = useState([]);
@@ -32,12 +33,16 @@ const Modals = (props) => {
             })}
         </div>
         <div className="tags">
-          <input type="text" placeholder="Tags" />
+          <div className="tagInputs">
+            <input type="text" placeholder="Tags" />
+            <button className="tagSubmit">Add</button>
+          </div>
           <div className="tagArr">
             {tagArr.map((tag) => {
               return (
                 <div className="tag">
-                  <h1>{tag}</h1>
+                  <ImCross className="xIcon"/>
+                  <p>{tag}</p>
                 </div>
               );
             })}
