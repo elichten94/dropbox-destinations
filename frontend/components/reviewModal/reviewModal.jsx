@@ -32,6 +32,7 @@ const Modals = (props) => {
   }
 
   const tagInputRef = useRef();
+  const titleInputRef = useRef();
 
   const populateTags = tags.tags.map((tag, index) => {
     console.log(index);
@@ -50,6 +51,9 @@ const Modals = (props) => {
         className="overlay"
       ></div>
       <form onSubmit={handleSubmit} className="modalForm">
+          <div className="titleInputContainer">
+            <input id="titleInput" type="text" placeholder="Recommendation Name" ref={titleInputRef} />
+          </div>
         <div className="stars">
           {Array(5)
             .fill(1)
