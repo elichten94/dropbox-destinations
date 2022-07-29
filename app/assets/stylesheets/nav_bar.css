@@ -3,8 +3,8 @@
     /* position: absolute; */
     /* flex-wrap: wrap; */
     flex-direction: row;
-    background-color: #fff;
-    margin: 0 auto;
+    background-color: rgb(28, 62, 91);
+    /* margin: 0 auto; */
     height: 90px;
     margin: -10px;
     padding: 0 10px 0 0;
@@ -15,11 +15,12 @@
     z-index: 1;
   }
 
+
   .sign-button {
     padding: 5px;
 
   }
-  
+
   .header-link > h1{
     display: flex;
     flex-wrap: wrap;
@@ -31,9 +32,9 @@
     margin-top: 33px;
     text-align: center;
     letter-spacing: -2px;
-    margin-left: 5px;
+    /* margin-left: 5px; */
   }
-  
+
   .header-link{
       display: flex;
       /* position: absolute; */
@@ -47,14 +48,14 @@
       /* margin: 0; */
       width: 100%;
   }
-  
+
   .nav-bar {
     /* display: flex;
     margin: 0px;
     padding: 0px;
     text-align: center; */
   }
-  
+
   .nav-btns{
     /* display: flex;
     flex-wrap: wrap;
@@ -65,12 +66,15 @@
     min-width: 700;
     padding-top: 6px; */
     width: 100%;
-      display: flex;
-      flex-wrap: nowrap;
-  
-  
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    color: white;
+    cursor: pointer
+
+
   }
-  
+
   .signup-btn, .login-btn  {
     text-decoration: none;
     display: flex;
@@ -87,34 +91,34 @@
     font-size: 15px;
     float: right;
   }
-  
+
   .signup-btn:hover{
     background-color: #72ccf9;
     transition: background-color 0.3s ease;
   }
-  
+
   .login-btn:hover{
     color: #72ccf9;
     border-color: #72ccf9;
     transition: all 0.3s ease;
   }
-  
-  
+
+
   .login-btn {
     color: #219ad8;
     border: 2px solid #219ad8;
     background-color: #fff;
     padding: 1px 15px 0px;
   }
-  
+
   body {
     margin: 0px;
   }
-  
+
   .trial{
     margin-top: 50px;
   }
-  
+
   .hiking-icon{
     display: flex;
     flex-wrap: wrap;
@@ -124,12 +128,12 @@
     cursor: pointer;
     display: block;
   }
-  
+
   .nav-dropdown{
     align-items: center;
     /* margin-right: 500px; */
   }
-  
+
   .dropdown-box{
     margin-right: 10px;
     color: #fff;
@@ -138,7 +142,7 @@
     z-index:2;
     position: absolute;
   }
-  
+
   .dropdown-item{
     font-size: 14px;
     display: block;
@@ -152,37 +156,37 @@
     padding: 12px 16px;
     cursor: pointer;
   }
-  
+
   .dropdown-item:hover{
     background-color: #f2f2f2;
     color: #666666;
   }
-  
+
   #dropdown-container{
     /* position: absolute;
     left: 90vw;
     padding: 15px;
     top:0.5vh; */
   }
-  
+
   #logo{
     width: 10%;
     height: 10%;
   }
-  
+
   #explore-btn{
-    margin-left: 60px;
+    margin-left: 25px;
     margin-top: 20px;
-    padding: 15px;
+    /* padding: 15px; */
     border: none;
     cursor: pointer;
     background-color: transparent;
-    color: #666666;
+    color: white;
     font-weight: 600;
     font-size: 15px;
   }
-  
-  
+
+
   .divContainer{
     display: flex;
     flex-direction: row;
@@ -190,8 +194,8 @@
     justify-content: flex-end;
     align-items: center;
   }
-  
-  
+
+
   .explore-container{
     /* display: flex;
     margin: 20px;
@@ -204,20 +208,20 @@
     max-width: calc(100% - 100px);
     height: 75vh;
   }
-  
+
   .explore-container .explore-inner-container {
     overflow: scroll;
   }
-  
+
   #trail-card{
     margin: 20px;
   }
-  
+
   .explore-container .track {
     display: inline-flex;
     transition: transform 0.5s;
   }
-  
+
   .explore-container #trail-card {
     width: 259px;
     flex-shrink: 0;
@@ -225,7 +229,7 @@
     padding-right: 15px;
     box-sizing: border-box;
   }
-  
+
   .explore-container #trail-card {
     width: 100%;
     height: 100%;
@@ -235,17 +239,17 @@
     display: flex;
     flex-direction: column;
   }
-  
+
   .list-trail-items{
     display: flex;
     flex-direction: row;
   }
-  
+
   #trail-item-explore{
     margin: 10px;
     width: 300px;
   }
-  
+
   .nav button {
     width: 60px;
     height: 60px;
@@ -269,11 +273,11 @@
   .nav .next.hide {
     display: none;
   }
-  
+
   .card > * {
     flex: 1;
   }
-  
+
   @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
   .carousel-container {
     width: 1280px;
@@ -281,7 +285,7 @@
     min-height: 200px;
     position: relative;
   }
-  
+
   .explore-title{
   font-family: Proxima Nova,Arial,sans-serif;
   font-size: 28px;

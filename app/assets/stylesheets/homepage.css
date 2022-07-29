@@ -1,0 +1,54 @@
+.recs  {
+  height: 580px;
+  width: 675px;
+  border-radius:8px;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0px 0px 16px -2px #575b5e;
+  overflow-y: scroll;
+  position: relative;
+
+ }
+
+ .sidebar  {
+  height: 580px;
+  width: 150px;
+  border-radius:8px;
+  text-align: center;
+  background-color: rgb(28, 62, 91);
+  box-shadow: 0px 0px 16px -2px #575b5e;
+  overflow-y: scroll;
+  color: white
+ }
+
+ .results  {
+  margin-top: 100px;
+  height: auto;
+  width: auto;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+ }
+
+ .section-title{
+  background-color:  rgb(28, 62, 91);
+  color: white;
+  font-weight: 500;
+  padding: 7px;
+  border-radius: 8px 8px 0 0;
+  position: sticky;
+  top: 0
+}
+
+.homepage-map  {
+  height: 580px;
+  width: 675px;
+  border-radius:8px;
+  text-align: center;
+  background-image: url('https://www.google.com/maps/d/thumbnail?mid=1xVW27vajd8KPFw0QRWFSkQ7g0IA');
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0px 0px 16px -2px #575b5e;
+  overflow: hidden
+
+ }
