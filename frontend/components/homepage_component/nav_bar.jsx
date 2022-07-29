@@ -19,8 +19,8 @@ export default () => {
 
   const display = (
     <div className='nav-btns'>
-      <div className="sign-button">Sign up</div>
-      <div className="sign-button">Sign In</div>
+      <div className="sign-button">SIGN UP</div>
+      <div className="sign-button">SIGN IN</div>
     </div>
   );
 

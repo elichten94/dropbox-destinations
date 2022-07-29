@@ -1,7 +1,9 @@
 import React from 'react'
 import SearchBarContainer from '../search_bar/search_bar_container.jsx'
 import Sidebar from './sidebar.jsx'
-// import './homepage.css'
+import HomePageRecs from '../recommendations/HomePageRecs.jsx'
+
+
 class splashPage extends React.Component {
   constructor(props) {
     super(props)
@@ -25,21 +27,15 @@ class splashPage extends React.Component {
           {/* <h1 className='welcomeMessage'>Are you ready for an adventure?</h1> */}
           <SearchBarContainer/>
         <div className='results'>
-          <div className='recs'> RECS 
-          <div>
-            {/* {this.props.reviews} */}
-          <ul>
-          {
-            this.props.reviews.map((review, i) => {
-              return <div key = {i}>{review.title}</div>
-            })
-          }
-        </ul>
+          <div className='recs'>
+            <div className='section-title'> RECOMMENDATIONS</div>
+            {['cafe1', 'cafe2', 'cafe3'].map((rec)=><HomePageRecs rec={rec}/>)}
           </div>
+          <div className='homepage-map'>
+            <div className='section-title'> MAP </div>
           </div>
-          <div className='map'> MAP </div>
           <div className='sidebar'>
-            <Sidebar people={['emily','brian','jamie', 'wenya', 'michelle']}/>
+            <Sidebar people={['Emily','Brian','Jamie', 'Wenya', 'Michelle']}/>
           </div>
         </div>
       </div>

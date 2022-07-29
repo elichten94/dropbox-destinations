@@ -13,7 +13,8 @@
     flex-grow: 1;
     font-size: 20px;
   }
-  
+
+
   .search-form {
     position: relative;
     border: none;
@@ -24,7 +25,7 @@
     left: 25vw;
     width: 50vw;
   }
-  
+
   .search-icon {
     position: absolute;
     left: -12px;
@@ -33,16 +34,16 @@
     color: #414141;
     font-size: 24px;
   }
-  
+
   .arrow-icon {
-    left: 47vw;
+    left: 48vw;
     top: 19px;
     position: absolute;
     font-size: 40px;
-    color: blue;
+    color:  rgb(28, 62, 91);;
     cursor: pointer;
   }
-  
+
   .search-results-container{
     display: flex;
     flex-direction: column;
@@ -59,7 +60,7 @@
     overflow: hidden;
     cursor:pointer;
   }
-  
+
   .search-result{
     z-index: 0;
     display: flex;
@@ -67,7 +68,7 @@
     border-bottom: 1px solid #e6e6e6;
     padding: 10px;
   }
-  
+
   .search-result:hover{
     /* z-index: 0; */
     /* display: flex; */
@@ -76,14 +77,14 @@
     /* padding: 10px; */
     background-color: #e6e6e6;
   }
-  
+
   .search-result-active{
     background-color: #e6e6e6;
     padding: 10px;
     display: flex;
     align-items: center;
   }
-  
+
   .result{
     display: flex;
     align-items: center;
@@ -96,28 +97,28 @@
     text-overflow: ellipsis;
     overflow: hidden;
   }
-  
+
   .searching-icon{
     margin-right: 15px;
     padding: 10px;
     background: rgb(242, 242, 242);
     border-radius: 50px;
   }
-  
+
   .search-container{
     display: flex;
   }
-  
+
   .arrow-icon:hover{
     color:#64bc29;
     transition: ease-in;
     transition: color 0.3s ease;
   }
-  
+
   .search-location{
-  
+
   }
-  
+
   /* .welcomeMessage{
     position: relative;
     top: 20vh;
@@ -128,45 +129,46 @@
     color: #fff;
     font-family: Proxima Nova,Arial,sans-serif;
   } */
-  
-  
+
+
   /* .home-container{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     z-index: 100;
   } */
-  
+
   .search-form input:focus::placeholder {
     color: transparent;
     border: none;
   }
-  
+
   .search-bar input:focus{
     outline: none;
     border: none;
   }
-  
+
   .search-form input:hover{
     outline: none;
     border: none;
   }
-  
+
   .search-form input::placeholder {
     font-size: 18px;
     margin: 0px 4px;
     border: none;
   }
-  
+
   #beach-image{
     position: absolute;
-    display: block; 
+    display: block;
     width: 100vw;
     height: 99%;
     object-fit: cover;
   }
-  
+
   .splash {
     padding: 0;
     min-height: 100vh;
+    background-color: rgb(104, 112, 130);
   }

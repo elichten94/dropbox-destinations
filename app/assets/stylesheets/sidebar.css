@@ -1,0 +1,25 @@
+.dropboxer {
+  margin: 20px;
+
+
+}
+
+.sidebar-title{
+
+  font-weight: 400;
+  font-size: 18px;
+  padding: 10px;
+  font-family:sans-serif;
+  position: sticky;
+  top: 0;
+  background-color: rgb(28, 62, 91);
+
+}
+
+
+.dbxer-name{
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 7px;
+}
