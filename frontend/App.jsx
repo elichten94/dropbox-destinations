@@ -3,6 +3,7 @@ import { Route, Switch, Link } from 'react-router-dom';
 import SplashContainer from './components/homepage_component/homepage_container.jsx'
 import NavBarContainer from './components/homepage_component/nav_bar_container.jsx'
 import RecModal from './components/recModal/recModal'
+import ReviewModal from './components/reviewModal/reviewModal'
 
 
 const App = () => {
@@ -34,7 +35,7 @@ const App = () => {
           <NavBarContainer/>
         </div >
       </header>
-      <RecModal setRecModalActive={setRecModalActive} recModalActive={recModalActive}/>
+      <ReviewModal setRecModalActive={setRecModalActive} recModalActive={recModalActive}/>
       <Switch>
         <Route exact path="/" component={props => <SplashContainer {...props} />} />
     </Switch>
