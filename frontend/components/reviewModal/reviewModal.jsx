@@ -3,7 +3,7 @@ import { AiFillStar } from "react-icons/ai";
 import { ImCross } from 'react-icons/im'
 
 const Modals = (props) => {
-  const [tags, setTags] = useState([]);
+  const [tags, setTags] = useState({tags: []});
   const [starHover, setStarHover] = useState();
   const [stars, setStars] = useState()
 
@@ -13,16 +13,17 @@ const Modals = (props) => {
 
   const tagSubmitHandler = (e) => {
     e.preventDefault();
-    console.log(tagInputRef);
-    const tagsi = tags
+    const tagsi = tags.tags
     tagsi.push(tagInputRef.current.value);
-    setTags(tagsi);
+    setTags({...tags.tags, tags: tagsi});
     console.log(tags);
+    const tagInput = document.getElementById('tagInput');
+    tagInput.value = '';
   };
 
   const tagInputRef = useRef();
 
-  const populateTags = tags.map((tag) => {
+  const populateTags = tags.tags.map((tag) => {
     return (
       <div className="tag" key={tag}>
         <ImCross className="xIcon"/>
@@ -54,7 +55,7 @@ const Modals = (props) => {
         </div>
         <div className="tags">
           <div className="tagInputs">
-            <input type="text" placeholder="Tags" ref={tagInputRef} />
+            <input id="tagInput" type="text" placeholder="Tags" ref={tagInputRef} />
             <button className="tagSubmit" onClick={tagSubmitHandler}>Add</button>
           </div>
           <div className="tagArr">
