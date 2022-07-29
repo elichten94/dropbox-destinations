@@ -11,6 +11,26 @@ const Modals = (props) => {
 
   const handleSubmit = () => {};
 
+  const tagSubmitHandler = (e) => {
+    e.preventDefault();
+    console.log(tagInputRef);
+    const tagsi = tags
+    tagsi.push(tagInputRef.current.value);
+    setTags(tagsi);
+    console.log(tags);
+  };
+
+  const tagInputRef = useRef();
+
+  const populateTags = tags.map((tag) => {
+    return (
+      <div className="tag" key={tag}>
+        <ImCross className="xIcon"/>
+        <p>{tag}</p>
+      </div>
+    );
+  });
+
   return (
     <div className={`modalMain ${props.recModalActive && "modalActive"}`}>
       <div
@@ -34,18 +54,11 @@ const Modals = (props) => {
         </div>
         <div className="tags">
           <div className="tagInputs">
-            <input type="text" placeholder="Tags" />
-            <button className="tagSubmit">Add</button>
+            <input type="text" placeholder="Tags" ref={tagInputRef} />
+            <button className="tagSubmit" onClick={tagSubmitHandler}>Add</button>
           </div>
           <div className="tagArr">
-            {tagArr.map((tag) => {
-              return (
-                <div className="tag">
-                  <ImCross className="xIcon"/>
-                  <p>{tag}</p>
-                </div>
-              );
-            })}
+            {populateTags}
           </div>
         </div>
         <textarea
