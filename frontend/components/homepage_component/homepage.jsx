@@ -21,7 +21,8 @@ class splashPage extends React.Component {
         <div className='results'>
           <div className='recs'>
             <div className='section-title'> RECOMMENDATIONS</div>
-            {['cafe1', 'cafe2', 'cafe3'].map((rec)=><HomePageRecs rec={rec}/>)} </div>
+            {['cafe1', 'cafe2', 'cafe3'].map((rec)=><HomePageRecs rec={rec}/>)}
+          </div>
           <div className='homepage-map'>
             <div className='section-title'> MAP </div>
           </div>

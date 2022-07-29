@@ -9,7 +9,7 @@ const App = () => {
     <>
       <header className='header'>
         <button className='add-rec-button' >
-        ADD A RECOMMENDATION
+          ADD A RECOMMENDATION
         </button>
         <div className="logo"> DROPBOX DESTINATIONS</div>
         <div className='signup-login-container'>
