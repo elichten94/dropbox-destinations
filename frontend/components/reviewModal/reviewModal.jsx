@@ -9,7 +9,10 @@ const Modals = (props) => {
 
   const tagArr = ["Chimken", "Lesanga", "Pie"];
 
-  const handleSubmit = () => {};
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    putData();
+  };
 
   const tagSubmitHandler = (e) => {
     e.preventDefault();
@@ -33,6 +36,7 @@ const Modals = (props) => {
 
   const tagInputRef = useRef();
   const titleInputRef = useRef();
+  const descriptionInputRef = useRef();
 
   const populateTags = tags.tags.map((tag, index) => {
     console.log(index);
@@ -43,6 +47,27 @@ const Modals = (props) => {
       </div>
     );
   });
+
+  const putData = () => {
+    fetch('http://localhost:3000/api/reviews', {
+      method: 'put',
+      body: JSON.stringify(
+        {
+          title: titleInputRef,
+          body: descriptionInputRef,
+          user_id: 1,
+          rec_id: 1,
+          rating: 5,
+          photo: 'https://sayingimages.com/wp-content/uploads/i-cant-handle-life-meme.jpg'
+      },
+    )
+    })
+    .then(res => {
+      if (res.ok) { console.log("HTTP request successful") }
+      else { console.log("HTTP request unsuccessful") }
+      return res
+    })
+  }
 
   return (
     <div className={`modalMain ${props.recModalActive && "modalActive"}`}>
@@ -81,6 +106,7 @@ const Modals = (props) => {
           name="description"
           type="text"
           placeholder="Tell us more about this recommendation"
+          ref={descriptionInputRef}
         ></textarea>
         <div className="modalButtons">
           <button
