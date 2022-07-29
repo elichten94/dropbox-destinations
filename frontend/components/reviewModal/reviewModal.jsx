@@ -21,12 +21,23 @@ const Modals = (props) => {
     tagInput.value = '';
   };
 
+  const handleCancelTag = (e) => {
+    e.preventDefault();
+    console.log(e);
+    const tagIndex = e.currentTarget.attributes['name'].value;
+    console.log(tagIndex);
+    const tagsi = tags.tags
+    tagsi.splice(tagIndex, 1);
+    setTags({...tags.tags, tags: tagsi});
+  }
+
   const tagInputRef = useRef();
 
-  const populateTags = tags.tags.map((tag) => {
+  const populateTags = tags.tags.map((tag, index) => {
+    console.log(index);
     return (
       <div className="tag" key={tag}>
-        <ImCross className="xIcon"/>
+        <ImCross onClick={handleCancelTag} name={index} className="xIcon"/>
         <p>{tag}</p>
       </div>
     );
