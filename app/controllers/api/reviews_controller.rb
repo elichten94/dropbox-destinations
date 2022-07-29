@@ -1,6 +1,13 @@
 class Api::ReviewsController < ApplicationController 
+  def index
+    @reviews = Review.all
+    render :index 
+  end
+  
   def show
-    Review.where(:rec_id => params[:id]).to_json
+    # Review.where(:rec_id => params[:id]).to_json
+    @review = Review.find_by(id: params[:id])
+    render :show
   end
 
   def create

@@ -16,10 +16,10 @@ export const removeReviewErrors = () => ({
   type: REMOVE_REVIEW_ERRORS
 })
 
-const receiveReviews = (reviews) => {
+const receiveReviews = (payload) => {
   return {
     type: RECEIVE_REVIEWS,
-    reviews
+    payload
   }
 }
 

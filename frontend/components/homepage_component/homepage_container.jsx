@@ -1,10 +1,19 @@
 import { connect } from 'react-redux';
-import splashPage from './homepage.jsx';
+import splashPage from './homepage';
+import {requestReviews} from '../../actions/review_actions'
 
-const mapStateToProps = (state, ownProps) => {
+const mapStateToProps = (state) => {
   return{
-    motto: 'Ready for adventure?'
+    motto: 'Ready for adventure?',
+    reviews: Object.values(state.entities.reviews)
+
   }
 }
 
-export default connect(mapStateToProps, null)(splashPage);
+const mDTP = (dispatch) => {
+  return {
+    requestReviews: (() => dispatch(requestReviews())),
+  }
+}
+
+export default connect(mapStateToProps, mDTP)(splashPage);

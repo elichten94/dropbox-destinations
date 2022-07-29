@@ -10,11 +10,9 @@ const ReviewsReducer = (oldState = {}, action) => {
 
   switch (action.type) {
     case RECEIVE_REVIEWS:
-        if (action.payload.reviews) {
-            return action.payload.reviews
-          } else return {};
+      return action.payload;
     case RECEIVE_REVIEW:
-      nextState[action.payload.review.id] = action.payload.review
+      nextState[action.payload.review.id] = action.payload.review;
       return nextState;
     case REMOVE_REVIEW:
       delete nextState[action.reviewId]

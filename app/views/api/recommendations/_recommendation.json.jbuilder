@@ -1,0 +1,1 @@
+json.extract! recommendation, :id, :rec_name, :description, :city, :state, :country, :user_id, :rating
