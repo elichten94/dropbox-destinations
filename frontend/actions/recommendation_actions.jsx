@@ -1,4 +1,4 @@
-import * as APIUtil from '../util/recomendation_api_util'
+import * as APIUtil from '../util/recommendation_api_util'
 
 
 export const RECEIVE_CITY_RECOMMENDATIONS  = 'RECEIVE_CITY_RECOMMENDATIONS'
